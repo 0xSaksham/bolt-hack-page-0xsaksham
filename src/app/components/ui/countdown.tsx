@@ -60,10 +60,10 @@ export function Countdown() {
 function TimeBlock({ value, label }: { value: number; label: string }) {
   return (
     <div className="flex flex-col items-center">
-      <div className="bg-black/80 rounded-lg p-4 min-w-[80px] text-center">
-        <span className="text-4xl font-bold">{value}</span>
+      <div className="bg-card border border-border rounded-lg p-4 min-w-[80px] text-center">
+        <span className="text-4xl font-bold text-foreground">{value}</span>
       </div>
-      <span className="text-sm text-neutral-500 mt-2">{label}</span>
+      <span className="text-sm text-muted-foreground mt-2">{label}</span>
     </div>
   );
 }

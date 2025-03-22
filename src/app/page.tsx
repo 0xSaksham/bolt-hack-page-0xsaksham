@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <motion.main
-      className="min-h-screen bg-black text-white overflow-x-hidden"
+      className="min-h-screen bg-background text-foreground overflow-x-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -36,11 +36,11 @@ export default function Home() {
 
       {/* Decorative elements */}
       <div
-        className="fixed top-1/4 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] -z-10"
+        className="fixed top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px] -z-10 dark:bg-primary/5"
         aria-hidden="true"
       />
       <div
-        className="fixed bottom-1/3 right-1/4 w-64 h-64 bg-purple-900/10 rounded-full blur-[100px] -z-10"
+        className="fixed bottom-1/3 right-1/4 w-64 h-64 bg-secondary/10 rounded-full blur-[100px] -z-10 dark:bg-secondary/5"
         aria-hidden="true"
       />
     </motion.main>
